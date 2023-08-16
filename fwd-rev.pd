@@ -1,0 +1,28 @@
+#N canvas 0 50 1024 582 12;
+#X obj 87 180 decide;
+#X obj 138 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 107 120 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 218 123 metro 3000;
+#X obj 218 147 random 3000;
+#X floatatom 218 171 5 0 0 0 - - -;
+#X obj 87 210 + 1;
+#X obj 82 36 inlet;
+#X obj 87 268 outlet;
+#X obj 339 153 vs.between 0.2 1.8;
+#X obj 164 41 loadbang;
+#X obj 339 180 s speed1;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 1 0;
+#X connect 3 0 9 0;
+#X connect 4 0 3 1;
+#X connect 4 0 5 0;
+#X connect 6 0 8 0;
+#X connect 7 0 2 0;
+#X connect 9 0 11 0;
+#X connect 10 0 2 0;
+#X coords 0 -1 1 1 60 40 1 100 100;
